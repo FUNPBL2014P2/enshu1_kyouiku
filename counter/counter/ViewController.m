@@ -14,10 +14,14 @@
 
 @implementation ViewController
 int n = 0;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    //NSString *str;
+    
+   self.counter.text=[NSString stringWithFormat:@"%d",n];
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,15 +31,20 @@ int n = 0;
 }
 
 - (IBAction)upBtn:(id)sender {
+    n++;
+    self.counter.text=[NSString stringWithFormat:@"%d",n];
+    
 }
 
 - (IBAction)downBtn:(id)sender {
     if(n >0){
         n--;
+        self.counter.text=[NSString stringWithFormat:@"%d",n];
     }
 }
 
 - (IBAction)resetBtn:(id)sender {
     n = 0;
+    self.counter.text=[NSString stringWithFormat:@"%d",n];
 }
 @end
