@@ -46,8 +46,12 @@ int x;
 
 - (IBAction)downBtn:(id)sender {
      if(self.Switch.on == YES){
-    if(n >0){
+    if(n-x >=0){
         n=n-x;
+        self.counter.text=[NSString stringWithFormat:@"%d",n];
+    }
+    else{
+        n=0;
         self.counter.text=[NSString stringWithFormat:@"%d",n];
     }
      }
