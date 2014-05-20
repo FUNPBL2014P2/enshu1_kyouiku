@@ -53,13 +53,19 @@
                                     <action selector="resetBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hd6-H8-2Gh"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UiB-cD-J45">
+                                <rect key="frame" x="204" y="58" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="Switch" destination="UiB-cD-J45" id="lWw-WO-dVT"/>
                         <outlet property="counter" destination="Lw7-ye-Oe5" id="kzf-b3-djn"/>
                         <outlet property="downbtn" destination="bYC-Bg-mUL" id="jkM-Fm-vKx"/>
                         <outlet property="resetbtn" destination="z6p-wB-LMz" id="taD-4r-Mj0"/>
+                        <outlet property="switch" destination="UiB-cD-J45" id="hEP-yD-eIR"/>
                         <outlet property="upbtn" destination="3Ca-CE-CRV" id="8aF-aZ-NjN"/>
                     </connections>
                 </viewController>

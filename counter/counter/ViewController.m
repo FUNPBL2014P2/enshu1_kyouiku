@@ -34,20 +34,26 @@ int n = 0;
 }
 
 - (IBAction)upBtn:(id)sender {
+    if(self.Switch.on == YES){
     n++;
     self.counter.text=[NSString stringWithFormat:@"%d",n];
+    }
     
 }
 
 - (IBAction)downBtn:(id)sender {
+     if(self.Switch.on == YES){
     if(n >0){
         n--;
         self.counter.text=[NSString stringWithFormat:@"%d",n];
     }
+     }
 }
 
 - (IBAction)resetBtn:(id)sender {
+     if(self.Switch.on == YES){
     n = 0;
     self.counter.text=[NSString stringWithFormat:@"%d",n];
+     }
 }
 @end
