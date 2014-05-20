@@ -17,5 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *resetbtn;
 - (IBAction)resetBtn:(id)sender;
 @property (weak, nonatomic) IBOutlet UISwitch *Switch;
+@property (weak, nonatomic) IBOutlet UITextField *Field;
+- (IBAction)field:(id)sender;
 
 @end

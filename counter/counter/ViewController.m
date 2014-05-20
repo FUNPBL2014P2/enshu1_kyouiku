@@ -56,4 +56,6 @@ int n = 0;
     self.counter.text=[NSString stringWithFormat:@"%d",n];
      }
 }
+- (IBAction)field:(id)sender {
+}
 @end
