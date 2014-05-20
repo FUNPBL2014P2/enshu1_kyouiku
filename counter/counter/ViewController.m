@@ -14,6 +14,7 @@
 
 @implementation ViewController
 int n = 0;
+int x;
 
 - (void)viewDidLoad
 {
@@ -26,6 +27,7 @@ int n = 0;
     [self.downbtn setTitle:@"DOWN" forState:UIControlStateNormal];
     [self.resetbtn setTitle:@"RESET" forState:UIControlStateNormal];
     [self.Field setKeyboardType:UIKeyboardTypeNumberPad];
+    [self.Close setTitle:@"CLOSE" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,7 +38,7 @@ int n = 0;
 
 - (IBAction)upBtn:(id)sender {
     if(self.Switch.on == YES){
-    n++;
+    n=n+x;
     self.counter.text=[NSString stringWithFormat:@"%d",n];
     }
     
@@ -45,7 +47,7 @@ int n = 0;
 - (IBAction)downBtn:(id)sender {
      if(self.Switch.on == YES){
     if(n >0){
-        n--;
+        n=n-x;
         self.counter.text=[NSString stringWithFormat:@"%d",n];
     }
      }
@@ -58,5 +60,10 @@ int n = 0;
      }
 }
 - (IBAction)field:(id)sender {
+    NSString *str =self.Field.text;
+    x=str.integerValue;
+}
+- (IBAction)close:(id)sender {
+    [self.Field resignFirstResponder];
 }
 @end
