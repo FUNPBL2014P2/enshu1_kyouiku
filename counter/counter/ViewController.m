@@ -25,6 +25,7 @@ int n = 0;
     [self.upbtn setTitle:@"UP" forState:UIControlStateNormal];
     [self.downbtn setTitle:@"DOWN" forState:UIControlStateNormal];
     [self.resetbtn setTitle:@"RESET" forState:UIControlStateNormal];
+    [self.Field setKeyboardType:UIKeyboardTypeNumberPad];
 }
 
 - (void)didReceiveMemoryWarning
