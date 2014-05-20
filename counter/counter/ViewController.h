@@ -10,8 +10,11 @@
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *counter;
+@property (weak, nonatomic) IBOutlet UIButton *upbtn;
 - (IBAction)upBtn:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *downbtn;
 - (IBAction)downBtn:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *resetbtn;
 - (IBAction)resetBtn:(id)sender;
 
 @end

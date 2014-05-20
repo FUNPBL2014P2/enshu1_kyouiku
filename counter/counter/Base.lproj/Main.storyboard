@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYC-Bg-mUL">
-                                <rect key="frame" x="135" y="217" width="46" height="30"/>
+                                <rect key="frame" x="102" y="216" width="116" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6p-wB-LMz">
-                                <rect key="frame" x="135" y="300" width="46" height="30"/>
+                                <rect key="frame" x="86" y="299" width="149" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,6 +58,9 @@
                     </view>
                     <connections>
                         <outlet property="counter" destination="Lw7-ye-Oe5" id="kzf-b3-djn"/>
+                        <outlet property="downbtn" destination="bYC-Bg-mUL" id="jkM-Fm-vKx"/>
+                        <outlet property="resetbtn" destination="z6p-wB-LMz" id="taD-4r-Mj0"/>
+                        <outlet property="upbtn" destination="3Ca-CE-CRV" id="8aF-aZ-NjN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

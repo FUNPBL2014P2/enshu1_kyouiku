@@ -22,6 +22,9 @@ int n = 0;
     //NSString *str;
     
    self.counter.text=[NSString stringWithFormat:@"%d",n];
+    [self.upbtn setTitle:@"UP" forState:UIControlStateNormal];
+    [self.downbtn setTitle:@"DOWN" forState:UIControlStateNormal];
+    [self.resetbtn setTitle:@"RESET" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
